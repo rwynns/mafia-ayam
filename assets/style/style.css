@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Kawaii";
+    src: url('../fonts/KawaiiRT-MonaShine.ttf');
+}
+
+body {
+    overflow-x: hidden;
+}
+.navbar {
+    background-color: #FFB800;
+}
+
+.nav-item a{
+    color: black;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-right: 50px;
+}
+
+.nav-item a:hover{
+    background-color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.nav-link.active {
+    background-color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+.running-text {
+    background-color: #FFB800;
+    padding: 6px 0;
+    font-family: "Poppins";
+    font-weight: 500;
+    margin-top: -30px;
+}
+
+.running-text marquee {
+    color: black;
+    font-size: 2rem;
+    z-index: -1;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url(../img/bg-1.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* End Hero Section */
+
+
+/* About Section */
+
+.about {
+    background-image: url(../img/bg-2.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.about .pic-left-2 {
+    width: 74%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about .pic-right-2 {
+    margin-left: 50px;
+    width: 80%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about p {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+}
+
+@media (max-width: 768px) {
+    .about .pic-about{
+        width: 80%;
+    }
+}
+
+
+/* Quotes Section */
+
+.quotes {
+    min-height: 100vh;
+}
+
+.quotes p{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 25px;
+}
+
+.quotes .bawah {
+    max-width: 100vw;
+    padding: 0;
+}
+
+/* End Quotes Section */
+
+
+/* Menu Section */
+
+.menu {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.menu .card {
+    padding: 0;
+    border: none; 
+    border-radius: 50px; 
+}
+
+.menu .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu .card-body {
+    padding: 0;
+}
+
+.menu .card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.menu h1 {
+    font-family: 'Kawaii';
+    color: #FFB800;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.menu p {
+    font-family: 'Kawaii';
+    font-size: 3.5rem;
+    color: white;
+    border : 2px solid #A80D04;
+    border-radius: 50px;
+    background-color: #A80D04;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.menu p:hover {
+    background-color: #FFB800;
+    color: black;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .menu h1 {
+        font-size: 2rem;
+    }
+
+    .menu p {
+        font-size: 2.2rem;
+    }
+}
+
+/* End Menu Section */
+
+
+/* Features Section */
+
+.features {
+    min-height: 100vh;
+}
+
+.features .col-lg-6 {
+    min-height: 50vh; /* Setiap bagian akan memiliki tinggi minimal 50% viewport */
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.features .kiri-atas {
+    background-color: #A80D04;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.features .kanan-atas {
+    background-color: #FFB800;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.features .kiri-bawah {
+    background-color: #FFB800;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-style: italic;
+
+}
+
+.features .kanan-bawah {
+    background-color: #A80D04;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* End Features Section */
+
+
+/* Contact Section */
+
+.contact {
+    min-height: 100vh;
+}
+
+.contact .logo {
+    width: 200px;
+}
+
+.contact h1 {
+    font-family: 'popins';
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.contact p {
+    font-family: 'popins';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact h3{
+    color: red;
+}
+
+.contact .bawah {
+    max-width: 100vw;
+    padding: 0;
+}
+
+.contact .link-sosmed {
+    margin-left: 10px;
+    font-family: 'popins';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact .link-sosmed:hover{
+    color: #A80D04;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .contact h1 {
+        margin-left: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .contact p {
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* End Contact Section */
