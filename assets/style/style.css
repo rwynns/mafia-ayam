@@ -330,3 +330,35 @@ body {
         margin-right: 0;
     }
 }
+
+/* Add these CSS rules */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    /* Ensure no elements exceed viewport width */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Adjust running text container */
+    .running-text {
+        width: 100vw;
+        left: 0;
+    }
+    
+    /* Ensure navbar stays within bounds */
+    .navbar {
+        width: 100vw;
+        left: 0;
+    }
+}
