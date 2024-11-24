@@ -5,8 +5,9 @@
 
 body {
     overflow-x: hidden;
-    padding-top: 110px; /* Update to navbar (80px) + running text (30px) */
+    padding-top: 110px; /* Combined height of navbar (80px) + running text (30px) */
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -14,7 +15,7 @@ body {
     width: 100%;
     background-color: #FFB800;
     z-index: 1000;
-    height: 80px; /* Set explicit height for navbar */
+    height: 80px;
 }
 
 .nav-item a{
@@ -23,6 +24,12 @@ body {
     font-weight: 600;
     font-size: 1.7rem;
     margin-right: 50px;
+}
+
+.nav-link.active {
+    background-color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 25px;
 }
 
 .nav-item a:hover{
@@ -34,14 +41,14 @@ body {
 
 .running-text {
     position: fixed;
-    top: 80px; /* Sesuaikan dengan tinggi navbar */
+    top: 80px; /* Position right below navbar */
     left: 0;
     width: 100%;
     background-color: #FFB800;
     z-index: 999;
-    height: 30px; /* Set explicit height */
-    display: flex; /* Add this */
-    align-items: center; /* Add this */
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .running-text marquee {
@@ -301,3 +308,25 @@ body {
 }
 
 /* End Contact Section */
+
+/* Add these styles to your style.css */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #FFB800;
+        padding: 1rem;
+        border-radius: 0 0 15px 15px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-item a {
+        margin-right: 0;
+    }
+}
