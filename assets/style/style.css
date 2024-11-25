@@ -274,6 +274,11 @@ body {
     font-weight: 500;
 }
 
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
 .contact h3{
     color: red;
 }
