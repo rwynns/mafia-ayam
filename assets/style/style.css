@@ -61,10 +61,10 @@ body {
 /* Hero Section */
 
 .hero {
-    background-image: url(../img/bg-1.png);
+    background-image: url(../img/bg-main.png);
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 110px); /* Adjust to account for fixed elements */
+    min-height: 120vh;
     margin-top: 0;
     padding-top: 0; /* Remove padding-top since we handled offset with body padding */
 }
